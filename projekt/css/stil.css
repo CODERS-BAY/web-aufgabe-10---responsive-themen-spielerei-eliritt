@@ -1,0 +1,384 @@
+:root {
+    --yellow: #BFA004;
+    --dark-blue: #253C59;
+    --light-blue: #85A0AA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--dark-blue);
+    margin: 0rem;
+    background-color: var(--light-blue);
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3%;
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    padding-top: 3vh;
+    padding-left: 10%;
+    color: var(--yellow);
+    font-size: 5rem;
+    text-align: left;
+    background-color: rgba (255, 255, 255, 0.7);
+}
+
+a {
+    color: var(--dark-blue);
+}
+
+.text-links::after {
+    content: " ›››"
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+#header {
+    background-image: url('../bilder/texture.jpg'), url(../bilder/header.jpg);
+    background-blend-mode: color-dodge;
+    background-position: 0% 60%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header-oesterreich {
+    background-image: url(../bilder/austria_gross.jpg);
+    background-position: 0% 80%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header-slovenia {
+    background-image: url(../bilder/slovenia_gross.jpg);
+    background-position: 0% 80%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header-finland {
+    background-image: url(../bilder/finland_gross.jpg);
+    background-position: 0% 60%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#header-britain {
+    background-image: url(../bilder/great-britain_gross.jpg);
+    background-position: 0% 30%;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#transparent {
+    background-color: rgba(149, 179, 191, 0.3);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: var(--dark-blue);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    padding: 1.5rem;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--dark-blue);
+}
+
+.nav-flex-container {
+    display: flex;
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+.nav-flex-item:hover {
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+}
+
+#nav-aktuell {
+    color: var(--dark-blue);
+    background-color: var(--yellow);
+}
+
+.main-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-flex-container-sub {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-flex-item {
+    flex-basis: 22%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px #85A0AA;
+    margin-bottom: 2%;
+}
+
+.main-flex-item-sub1 {
+    flex-basis: 30%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px #85A0AA;
+    padding: 2%;
+}
+
+.main-flex-item-sub2 {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px var(--light-blue);
+    padding: 2%;
+}
+
+.img-fluid {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.img-fluid:hover {
+    opacity: 0.8;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--light-blue);
+}
+
+.steckbrief {
+    width: 30%;
+}
+
+/*.highlighted {
+    background-image: url(../bilder/brush-stroke.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.highlighted2 {
+    background-image: url(../bilder/brush-stroke.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+}*/
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    margin: 3.5rem auto;
+    width: 95%;
+    grid-gap: .5rem;
+}
+
+@keyframes erscheinen {
+0%      {opacity: 0;}
+100%    {opacity: 1;}
+}
+
+.galerie img {
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px var(--light-blue);
+    width: 100%;
+    filter: grayscale(50%);
+    animation: erscheinen 5s infinite alternate;
+    animation-iteration-count: 1;
+}
+
+.galerie img:hover {
+    opacity: 0.8;
+    filter: grayscale(0%);
+}
+
+.galerie-item2 {
+    height: 100%;
+}
+
+.galerie-item3 {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.galerie-item4 {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.galerie-item7 {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.formular {
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.formular ul {
+    padding-left: 0;
+}
+
+.formular li {
+    display: flex;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+    
+.formular li label {
+    flex: 1 0 20%;
+    padding: 1rem 2rem 1rem 0rem;
+    text-align: right;
+}
+
+.formular li input, .formular li textarea, .formular li select {
+    flex: 1 0 80%;
+}
+
+.formular li input, .formular li textarea, .formular li select {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--dark-blue);
+    /* width: 100%; */
+    font: inherit;
+    transition: all 0.4s;
+}
+
+.formular input:focus, .formular textarea:focus, .formular select:focus {
+    border-color: var(--yellow);
+    outline: 0;
+}
+
+.formular li button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--dark-blue);
+    color: white;
+    font: inherit;
+    border-radius: 0.5rem;
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 700px){
+
+.main-flex-container {
+    display: block;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-flex-container-sub {
+    display: block;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-flex-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px #85A0AA;
+}
+
+.main-flex-item-sub1 {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px #85A0AA;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.main-flex-item-sub2 {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 15px 5px var(--light-blue);
+    padding: 2%;
+}
+
+.galerie {
+    display: block;
+}
+
+.galerie img {
+    width: 60vh;
+    margin-bottom: 2%;
+}
+
+.formular li {
+    display: block;
+}
+
+.formular li label {
+    display: block;
+    text-align: center;
+}
+
+.formular li button {
+    margin-left: auto;
+}
+
+}

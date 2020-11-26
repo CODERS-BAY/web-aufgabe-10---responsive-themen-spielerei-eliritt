@@ -1,0 +1,35 @@
+header {
+    display: none;
+}
+
+a[href]::after {
+    content: " ["attr(href) "]";
+}
+
+.main-flex-container {
+    display: block;
+}
+
+.main-flex-container img {
+    display: none;
+}
+
+.main-flex-container-sub {
+    display: block;
+}
+
+.main-flex-container-sub img {
+    display: none;
+}
+
+.main-flex-item {
+    width: 100%;
+}
+
+.main-flex-item-sub1 {
+    width: 100%;
+}
+
+.main-flex-item-sub2 {
+    width: 100;
+}

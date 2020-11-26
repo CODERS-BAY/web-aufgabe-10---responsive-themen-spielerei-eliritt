@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel Europe - Erlebe die schönsten Plätze Europas!">
+    <link rel="stylesheet" href="css/stil.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <title>Travel Europe - die schönsten Plätze Europas!</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="transparent">
+                <h1>Kontakt</h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-flex-container">
+                <li class="nav-flex-item"><a href="index.html">Home</a></li>
+                <li class="nav-flex-item"><a href="austria.html">Österreich</a></li>
+                <li class="nav-flex-item"><a href="finland.html">Finnland</a></li>
+                <li class="nav-flex-item"><a href="great-britain.html">Großbritannien</a></li>
+                <li class="nav-flex-item"><a href="slovenia.html">Slowenien</a></li>
+                <li class="nav-flex-item" id="nav-aktuell"><a href="kontakt.html">Kontakt</a></li>
+            </ul>     
+        </nav>            
+    </header>    
+    <main>
+        <h2>Du hättest gerne unseren Reisebericht zu den einzelnen Ländern? Dann kontaktiere uns!</h2>
+        <article>
+            <form class="formular">
+                <ul>
+                    <li>
+                        <label for="destination">Destination</label>
+                        <select name="destination" id="destination">
+                            <option value="1">Österreich</option>
+                            <option value="2">Finnland</option>
+                            <option value="3">Großbritannien</option>
+                            <option value="4">Slowenien</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="vorname">Dein Vorname</label>
+                        <input type="text" name="vorname" id="vorname">
+                    </li>
+                    <li>
+                        <label for="nachname">Dein Nachname</label>
+                        <input type="text" name="nachname" id="nachname">
+                    </li>
+                    <li>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="kommentar">Kommentar</label>
+                        <textarea rows="6" cols="20" name="kommentar" id="kommentar"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">Absenden</button>
+                    </li>
+                </ul>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Elisabeth Ritt, 2020</p>
+    </footer>
+</body>
+</html>
