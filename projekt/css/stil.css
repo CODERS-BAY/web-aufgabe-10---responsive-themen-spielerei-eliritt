@@ -328,8 +328,8 @@ tr:nth-child(odd) {
 
 .main-flex-container {
     display: block;
-    justify-content: space-evenly;
-    align-items: stretch;
+    width: 90%;
+    margin: auto;
 }
 
 .main-flex-container-sub {
@@ -342,6 +342,8 @@ tr:nth-child(odd) {
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 15px 5px #85A0AA;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .main-flex-item-sub1 {
@@ -361,10 +363,11 @@ tr:nth-child(odd) {
 
 .galerie {
     display: block;
+    width: 87vw;
 }
 
 .galerie img {
-    width: 60vh;
+    width: 100%;
     margin-bottom: 2%;
 }
 
